@@ -1,0 +1,273 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2024"><meta name="generator" content="DITA-OT"><meta name="abstract" content="This is a DITA-OT Plug-in used to auto-create valid DITA-based Javadoc documentation. The initial source of the documentation can be generated directly using the JavaDoc XML Doclet. The XML file can be added to the source and processed as if it had been written in DITA."><meta name="description" content="This is a DITA-OT Plug-in used to auto-create valid DITA-based Javadoc documentation. The initial source of the documentation can be generated directly using the JavaDoc XML Doclet. The XML file can be added to the source and processed as if it had been written in DITA."><meta property="og:type" content="website"><meta property="og:url" content="https://jason-fox.github.io/dita-ot-plugins/javadoc/index.html"><meta property="og:title" content="Javadoc Plug-in"><meta property="og:description" content="This is a DITA-OT Plug-in used to auto-create valid DITA-based Javadoc documentation. The initial source of the documentation can be generated directly using t"><meta property="og:image" content="https://jason-fox.github.io/dita-ot-plugins/open-graph.svg"><meta name="twitter:title" content="Javadoc Plug-in"><meta name="twitter:description" content="This is a DITA-OT Plug-in used to auto-create valid DITA-based Javadoc documentation. The initial source of the documentation can be generated directly using t"><meta property="twitter:url" content="https://jason-fox.github.io/dita-ot-plugins/javadoc/index.html"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://jason-fox.github.io/dita-ot-plugins/open-graph.svg"><title>Javadoc Plug-in</title><script src="../js/lunr-client.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><link rel="shortcut icon" href="../favicon/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css">
+<link rel="stylesheet" type="text/css" href="../css/common-extended.css"><link rel="stylesheet" type="text/css" href="../css/theme.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous"></head><body id="javadoc-plug-in" data-bs-spy="scroll" data-bs-target="#bs-scrollspy"><div class="visually-hidden-focusable overflow-hidden p-2 bg-body-tertiary"><div class="container-xl"><a class="d-inline-flex m-1 btn btn-outline-primary btn-sm" href="#ariaid-title1">Skip to main content</a><a href="#bs-sidebar-nav" class="d-none d-md-inline-flex m-1 btn btn-outline-primary btn-sm">Skip to docs navigation</a></div></div><header role="banner" class="sticky-top"><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-xxl">
+    <!-- This shows the menu on mobile -->
+    <div class="bd-navbar-toggle">
+      <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar" aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+    <a class="navbar-brand" href="https://www.dita-ot.org/">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.083 2.083 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.922 1.922 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0zM5 4v2.5A2.5 2.5 0 0 0 7.5 9h1A2.5 2.5 0 0 0 11 6.5V4H5z"/>
+      </svg>
+      <span class="align-middle">Plugins for DITA Open Toolkit</span>
+    </a>
+    <button class="navbar-toggler py-2 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-three-dots"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item d-flex align-items-center">
+          <form class="position-relative me-auto search-box rounded">
+            <div class="input-group">
+              <span class="input-group-text bg-primary-subtle">
+                <i class="bi bi-search"></i>
+              </span>
+              <input type="search" class="form-control form-floating" placeholder="Search…" aria-label="Search for…" dir="auto">
+            </div>
+          </form>
+        </li>
+        <!--
+          This is a dark/light color theme toggler.
+          It requires JavaScript to function.
+        -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+            <span class="d-light">
+              <i class="bi bi-brightness-high-fill"></i>
+            </span>
+            <span class="d-dark">
+              <i class="bi bi-moon-stars-fill"></i>
+            </span>
+            <span class="d-auto">
+              <i class="bi bi-circle-half"></i>
+            </span>
+            <span class="d-lg-none ms-2">Toggle theme</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme" style="--bs-dropdown-min-width: 6rem;" data-bs-popper="static">
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+                <i class="bi bi-brightness-high-fill"></i>
+                <span class="ms-2">Light</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+                <i class="bi bi-moon-stars-fill"></i>
+                <span class="ms-2">Dark</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+                <i class="bi bi-circle-half"></i>
+                <span class="ms-2">Auto</span>
+              </button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav></header><div class="bs-container container-xxl bd-gutter mt-3 my-md-4" id="content"><div class="overflow-y-auto bs-sidebar"><div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel" aria-modal="true" role="dialog"><div class="offcanvas-header border-bottom"><h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">DITA Bootstrap</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button></div><div class="offcanvas-body flex-column h-100"><nav class="d-flex flex-align-start flex-column h-100 overflow-y-auto" role="navigation" id="bs-sidebar-nav"><div class="overflow-y-auto"><div class="flex-column bd-links"><ul class="list-unstyled mb-0 py-3 pt-md-1"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../index.html">DITA-OT Plugins</a></div></li><li><div class="d-flex flex-row"><button data-bs-toggle="collapse" class="btn d-inline-flex align-items-center pe-0 border-0 active" data-bs-target="#menu-collapse-d34344e16" aria-expanded="true" aria-current="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 14l6-6-6-6"/></svg></button><span data-bs-toggle="collapse" class="d-inline-flex align-items-center flex-shrink-1 ps-1 active" data-bs-target="#menu-collapse-d34344e16" aria-expanded="true" aria-current="true">Plug-Ins</span></div><div id="menu-collapse-d34344e16" class="collapse show"><ul class="list-unstyled fw-normal ps-4"><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../audiobook/index.html">Audiobook Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../extend.css/index.html">Extended CSS Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../favicon/index.html">Favicon Plugin</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../doxygen/index.html">Doxygen Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3 active" href="../javadoc/index.html">Javadoc Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../pandoc/index.html">Pandoc Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../passthrough/index.html">Passthrough Plugin</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../postman/index.html">Postman Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../pretty-dita/index.html">DITA Prettifier Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../prismjs/index.html">Prism-JS Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../open-graph/index.html">Open Graph Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../readthedocs/index.html">ReadTheDocs Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../splash/index.html">Splash Screen Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../swagger/index.html">Swagger Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../tabs.css/index.html">CSS-only Tabs Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../translate.xliff/index.html">XLIFF Translate Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../unit-test/index.html">Unit Test Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../validate.svrl/index.html">DITA Validator Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../validate.svrl.text-rules/index.html">Spelling and Grammar Checker Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../watermark/index.html">Watermark Plug-in</a></div></li><li><div class="d-flex flex-row"><a class="d-inline-flex align-items-center flex-shrink-1 ps-3" href="../open-graph/index.html">Open Graph Plug-in</a></div></li></ul></div></li></ul></div></div></nav></div></div></div><main role="main" class="bs-main me-3"><article role="article" class="bs-content" aria-labelledby="ariaid-title1"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span>Plug-Ins</span></li><li class="breadcrumb-item active" aria-current="page">Javadoc Plug-in</li></ol></nav>
+    <h1 class="title text-primary" id="ariaid-title1">Javadoc Plug-in</h1>
+    
+    
+    <div class="body"><div class="abstract">
+        <p class="shortdesc text-body-secondary lead">
+           This is a <a class="xref" href="https://www.dita-ot.org/plugins" target="_blank" rel="external noopener">DITA-OT Plug-in</a> used to auto-create valid DITA-based
+           <a class="xref" href="https://docs.oracle.com/javase/1.5.0/docs/guide/javadoc/index.html" target="_blank" rel="external noopener">Javadoc</a> documentation. The initial source
+           of the documentation can be generated directly using the <a class="xref" href="https://github.com/markusbernhardt/xml-doclet" target="_blank" rel="external noopener">JavaDoc XML Doclet</a>. The XML file can be added to the
+           source and processed as if it had been written in DITA.
+        </p>
+        <p class="p">
+        </p>
+    </div></div>
+    <article class="topic nested1" aria-labelledby="ariaid-title2" id="example">
+        <h2 class="title text-primary" id="ariaid-title2">Example</h2>
+        <div class="body">
+            <div class="div row">
+               <div class="div">
+                    <img class="image float-start mt-1 me-3" src="https://jason-fox.github.io/fox.jason.passthrough.javadoc/javalogo.png" height="55">
+                    <p class="p">
+                       <dfn class="term">Javadoc</dfn> is a tool that parses the declarations and documentation
+                       comments in a set of source files and produces a set of HTML pages describing
+                       the classes, interfaces, constructors, methods, and fields.
+                    </p>
+                </div>
+            </div>
+            <p class="p">
+               <dfn class="term">Javadoc</dfn> supports doclets used to customize Javadoc output. A doclet
+               is a program written with the Doclet API that specifies the content and format
+               of the output to be generated by the Javadoc tool.
+            </p>
+            <p class="p">
+               A library exists to preprocess Javadoc comments from Java source code to a XML
+               document. It can be downloaded <a class="xref" href="https://github.com/markusbernhardt/xml-doclet" target="_blank" rel="external noopener">here</a>.
+               This DITA-OT plugin processes a JavaDoc XML and the converts it to DITA
+               allowing the generation of PDF API documentation.
+            </p>
+            <figure class="fig figure w-100 mw-100 p-3" id="example__sample-javadoc">
+                
+                <pre class="pre codeblock alert alert-secondary language-java scale-80"><code><span class="ph token comment">/**
+ * Effector is the interface for Casbin effectors.
+ */</span>
+<span class="ph token keyword">public</span> <span class="ph token keyword">interface</span> <span class="ph token class-name">Effector</span> <span class="ph token punctuation">{</span>
+    <span class="ph token comment">/**
+     * mergeEffects merges all matching results collected by the enforcer into a single decision.
+     *
+     * @param expr the expression of [policy_effect].
+     * @param effects the effects of all matched rules.
+     * @param results the matcher results of all matched rules.
+     * @return the final effect.
+     */</span>
+    <span class="ph token keyword">boolean</span> <span class="ph token function">mergeEffects</span><span class="ph token punctuation">(</span><span class="ph token class-name">String</span> expr<span class="ph token punctuation">,</span> <span class="ph token class-name">Effect</span><span class="ph token punctuation">[</span><span class="ph token punctuation">]</span> effects<span class="ph token punctuation">,</span> <span class="ph token keyword">float</span><span class="ph token punctuation">[</span><span class="ph token punctuation">]</span> results<span class="ph token punctuation">)</span><span class="ph token punctuation">;</span>
+<span class="ph token punctuation">}</span></code></pre>
+            <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 1. </span>Sample Javadoc</figcaption></figure>
+
+            <figure class="fig figure w-100 mw-100 p-3">
+                
+                <img class="image figure-img img-fluid border rounded img-fluid img-thumbnail" src="https://jason-fox.github.io/fox.jason.passthrough.javadoc/javadoc-output.png" alt="">
+            <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 2. </span>Javadoc PDF Output</figcaption></figure>
+
+        </div>
+    </article>
+    <article class="topic nested1" aria-labelledby="ariaid-title3" id="install">
+    <h2 class="title text-primary" id="ariaid-title3">Install</h2>
+    
+    <div class="body">
+        <p class="p">
+           Run the plug-in installation commands:
+        </p>
+        <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/doctales/org.doctales.xmltask/archive/master.zip
+<span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/fox.jason.passthrough/archive/master.zip
+<span class="keyword cmdname">dita</span> <span class="keyword parmname"><span class="ph token function">install</span></span> https://github.com/jason-fox/fox.jason.passthrough.javadoc/archive/master.zip</code></pre>
+        <p class="p">
+           The <span class="keyword cmdname">dita</span> command line tool requires no additional configuration.
+        </p>
+    </div>
+</article>
+    <article class="topic nested1" aria-labelledby="ariaid-title4" id="usage">
+    <h2 class="title text-primary" id="ariaid-title4">Usage</h2>
+    <div class="body">
+        <p class="p">
+           If you are using <dfn class="term">Maven</dfn> you can generate XML-based Javadoc by adding
+           the following plug-in to your <code class="ph codeph">pom.xml</code>. Javadoc will be
+           generated using the <span class="keyword cmdname">mvn</span><span class="keyword option">package</span> command.
+        </p>
+        <figure class="fig figure w-100 mw-100 p-3">
+            
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>project</span><span class="ph token punctuation">&gt;</span></span>
+  ...
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>plugin</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>groupId</span><span class="ph token punctuation">&gt;</span></span>org.apache.maven.plugins<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>groupId</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>artifactId</span><span class="ph token punctuation">&gt;</span></span>maven-javadoc-plugin<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>artifactId</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>executions</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>execution</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>id</span><span class="ph token punctuation">&gt;</span></span>xml-doclet<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>id</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>phase</span><span class="ph token punctuation">&gt;</span></span>prepare-package<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>phase</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>goals</span><span class="ph token punctuation">&gt;</span></span>
+          <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>goal</span><span class="ph token punctuation">&gt;</span></span>javadoc<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>goal</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>goals</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>configuration</span><span class="ph token punctuation">&gt;</span></span>
+          <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>doclet</span><span class="ph token punctuation">&gt;</span></span>com.github.markusbernhardt.xmldoclet.XmlDoclet<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>doclet</span><span class="ph token punctuation">&gt;</span></span>
+          <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>additionalparam</span><span class="ph token punctuation">&gt;</span></span>-d ${project.build.directory} -filename ${project.artifactId}-${project.version}-javadoc.xml<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>additionalparam</span><span class="ph token punctuation">&gt;</span></span>
+          <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>useStandardDocletOptions</span><span class="ph token punctuation">&gt;</span></span>false<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>useStandardDocletOptions</span><span class="ph token punctuation">&gt;</span></span>
+          <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>docletArtifact</span><span class="ph token punctuation">&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>groupId</span><span class="ph token punctuation">&gt;</span></span>com.github.markusbernhardt<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>groupId</span><span class="ph token punctuation">&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>artifactId</span><span class="ph token punctuation">&gt;</span></span>xml-doclet<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>artifactId</span><span class="ph token punctuation">&gt;</span></span>
+            <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>version</span><span class="ph token punctuation">&gt;</span></span>1.0.5<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>version</span><span class="ph token punctuation">&gt;</span></span>
+          <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>docletArtifact</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>configuration</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>execution</span><span class="ph token punctuation">&gt;</span></span>
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>executions</span><span class="ph token punctuation">&gt;</span></span>
+  <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>plugin</span><span class="ph token punctuation">&gt;</span></span>
+  ...
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>project</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 3. </span>pom.xml</figcaption></figure>
+
+        <p class="p">
+           If you are not using <dfn class="term">Maven</dfn>, you can use the <a class="xref" href="http://search.maven.org/remotecontent?filepath=com/github/markusbernhardt/xml-doclet/1.0.5/xml-doclet-1.0.5-jar-with-dependencies.jar" target="_blank" rel="external noopener">jar-with-dependencies</a>, which contains all
+           required libraries.
+        </p>
+        <pre class="pre codeblock alert alert-secondary language-bash scale-80"><code><span class="keyword cmdname">javadoc</span> <span class="keyword parmname">-doclet</span> com.github.markusbernhardt.xmldoclet.XmlDoclet <span class="ph token punctuation">\</span>
+     <span class="keyword parmname">-docletpath</span> xml-doclet-1.0.5-jar-with-dependencies.jar <span class="ph token punctuation">\</span>
+   <span class="ph token punctuation">[</span>Javadoc- and XmlDoclet-Options<span class="ph token punctuation">]</span></code></pre>
+        <p class="p">
+           Once the source XML has been created, add it to the <code class="keyword markupname xmlelement">&lt;map&gt;</code>
+           and mark it for <dfn class="term">Javadoc</dfn> processing, by labelling  the <code class="keyword markupname xmlelement">&lt;topicref&gt;</code>
+           with <code class="keyword markupname xmlatt">@format="javadoc"</code> within the <code class="keyword markupname xmlelement">&lt;map&gt;</code>
+           as shown:
+        </p>
+        <figure class="fig figure w-100 mw-100 p-3">
+            
+            <pre class="pre codeblock alert alert-secondary language-xml scale-80"><code><span class="ph token prolog">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="ph token doctype"><span class="ph token punctuation">&lt;!</span><span class="ph token doctype-tag">DOCTYPE</span> <span class="ph token name">bookmap</span> <span class="ph token name">PUBLIC</span> <span class="ph token string">"-//OASIS//DTD DITA BookMap//EN"</span> <span class="ph token string">"bookmap.dtd"</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>bookmap</span><span class="ph token punctuation">&gt;</span></span>
+    ...etc
+    <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>appendices</span> <span class="ph token attr-name">toc</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>yes<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">print</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>yes<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>topicmeta</span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>navtitle</span><span class="ph token punctuation">&gt;</span></span>Appendices<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>navtitle</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>topicmeta</span><span class="ph token punctuation">&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>appendix</span> <span class="ph token attr-name">format</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>dita<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">href</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>topic.dita<span class="ph token punctuation">"</span></span><span class="ph token punctuation">&gt;</span></span>
+        <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;</span>topicref</span> <span class="ph token attr-name">format</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>javadoc<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">type</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>topic<span class="ph token punctuation">"</span></span> <span class="ph token attr-name">href</span><span class="ph token attr-value"><span class="ph token punctuation attr-equals">=</span><span class="ph token punctuation">"</span>javadoc.xml<span class="ph token punctuation">"</span></span><span class="ph token punctuation">/&gt;</span></span>
+      <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>appendix</span><span class="ph token punctuation">&gt;</span></span>
+   <span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>appendices</span><span class="ph token punctuation">&gt;</span></span>
+<span class="ph token tag"><span class="ph token tag"><span class="ph token punctuation">&lt;/</span>bookmap</span><span class="ph token punctuation">&gt;</span></span></code></pre>
+        <figcaption class="fig figure-caption"><span class="fig--title-label">Figure 4. </span>Usage</figcaption></figure>
+
+        <p class="p">
+           The additional file will be converted to a <code class="ph codeph">*.dita</code> file and will
+           be added to the build job without further processing. Unless overridden, the <code class="keyword markupname xmlatt">@navtitle</code>
+           of the included <code class="keyword markupname xmlelement">&lt;topic&gt;</code> will be the same as root name of
+           the file. Any underscores in the filename will be replaced by spaces in title.
+        </p>
+    </div>
+</article>
+</article><div class="bs-scrollspy mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary"><nav><ul>
+    <li><a class="ps-2" href="#ariaid-title1">Javadoc Plug-in</a></li>
+    
+    
+    
+    <ul>
+        <li><a class="ps-2" href="#ariaid-title2">Example</a></li>
+        
+    </ul>
+    <ul>
+    <li><a class="ps-2" href="#ariaid-title3">Install</a></li>
+    
+    
+</ul>
+    <ul>
+    <li><a class="ps-2" href="#ariaid-title4">Usage</a></li>
+    
+</ul>
+</ul></nav></div></main></div><script language="javascript" src="../js/popovers.js"></script><script language="javascript" src="../js/dark-mode-toggler.js"></script><footer role="contentinfo" class="mt-3 border-top bg-primary-subtle"><!-- Footer --><footer class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!-- Social Media -->
+        <p class="text-center p-3">
+          <!-- Linkedin -->
+          <a class="btn btn-primary btn-floating m-1 text-white" style="background-color: #0082ca" href="https://www.linkedin.com/in/jason-fox-8a79563/" role="button"><i class="bi bi-linkedin"></i></a>
+          <!-- Github -->
+          <a class="btn btn-primary btn-floating m-1 text-white" style="background-color: #333333" href="https://github.com/jason-fox/" role="button"><i class="bi bi-github"></i></a>
+        </p>
+      </div>
+      <div>
+        <!-- Copyright -->
+        <p class="text-muted p-3">
+          <small>
+            © 2021 - 2023 <b>Jason Fox</b>
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><!-- Footer --></footer></body></html>
