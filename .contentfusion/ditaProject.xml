@@ -3,4 +3,12 @@
     <context id="yvlKChQRhsdKGcy" name="one">
         <input href="../dita/document.ditamap"/>
     </context>
+    <publication id="pdf" transtype="pdf-css-html5"/>
+    <deliverable id="d-one-1725038873978" name="one">
+        <context idref="yvlKChQRhsdKGcy"/>
+        <output href="pdf-output"/>
+        <publication idref="pdf">
+            <param name="editlink.enable.edit.in.content.fusion.workspace" value="false"/>
+        </publication>
+    </deliverable>
 </project>
