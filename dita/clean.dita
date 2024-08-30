@@ -32,6 +32,9 @@
             <step>
                 <cmd>Clean and clean more</cmd>
                 </step>
+            <step>
+                <cmd>Go home and do your laundry</cmd>
+            </step>
         </steps>
     </taskbody>
 </task>
