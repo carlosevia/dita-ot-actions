@@ -7,10 +7,18 @@
         <input href="../dita/document.ditamap"/>
     </context>
     <publication id="pdf" transtype="pdf-css-html5"/>
+    <publication id="webhelp" transtype="webhelp-responsive"/>
     <deliverable id="d-one-1725038873978" name="one">
         <context idref="yvlKChQRhsdKGcy"/>
         <output href="pdf-output"/>
         <publication idref="pdf">
+            <param name="editlink.enable.edit.in.content.fusion.workspace" value="false"/>
+        </publication>
+    </deliverable>
+    <deliverable id="d-two-1725039807838" name="two">
+        <context idref="BFacwfWlgfwybfm"/>
+        <output href="webhelp-output"/>
+        <publication idref="webhelp">
             <param name="editlink.enable.edit.in.content.fusion.workspace" value="false"/>
         </publication>
     </deliverable>
