@@ -20,11 +20,12 @@
                 <li>Detergent</li>
                 <li>Gloves</li>
                 <li>Dirty machine</li>
-        </ul>
+            </ul>
         </prereq>
+      
         <context>
-            Clean the machine only when it's dirty... duh!
-        </context>
+<p conref="index.dita#index/eat"/>   
+      </context>
         <steps>
             <step>
                 <cmd>Prepare the machine</cmd>

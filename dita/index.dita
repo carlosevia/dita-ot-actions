@@ -16,8 +16,8 @@
             </keywords>
         </metadata>
     </prolog>
-    <body outputclass="language-bash">
+    <body>
         <p>This is an experiment. Kinda.</p>
-        <section id="installing-dita-ot"> </section>
+      <p id="eat">Eat fruits and vegetables.</p>
     </body>
 </topic>
