@@ -46,7 +46,7 @@ jobs:
             fox.jason.prismjs
           project: .github/dita-ot/pdf.xml
       - name: Upload PDF 📚
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: dita-artifact
           path: 'out/pdf'
